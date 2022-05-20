@@ -24,6 +24,7 @@
   "bucket": "cql-helper-testing",
   "model_dir": "mesh_jax_cql_6B_rotary",
 
+  "eval_harness_tasks": [],
   "train_set": "queries.train.index",
   "val_set": {
   },
