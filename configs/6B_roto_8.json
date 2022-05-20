@@ -12,12 +12,12 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 16,
 
-  "warmup_steps": 3,
-  "anneal_steps": 34,
-  "lr": 5e-5,
+  "warmup_steps": 37,
+  "anneal_steps": 407,
+  "lr": 3e-5,
   "end_lr": 1e-5,
   "weight_decay": 0.1,
-  "total_steps": 37,
+  "total_steps": 444,
 
   "tpu_size": 8,
 
@@ -26,14 +26,12 @@
 
   "train_set": "queries.train.index",
   "val_set": {
-    "pile": "pile.val.index",
-    "owt": "openwebtext2_new_inputs.val.index"
   },
 
   "val_batches": 100,
   "val_every": 500000000,
-  "ckpt_every": 500,
-  "keep_every": 10000,
+  "ckpt_every": 111,
+  "keep_every": 111,
 
   "name": "GPT3_6B_cql_rotary",
   "wandb_project": "mesh-transformer-jax",
