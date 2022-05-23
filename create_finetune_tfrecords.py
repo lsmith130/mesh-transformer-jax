@@ -246,7 +246,7 @@ def arrays_to_sequences(token_list_iterable, sequence_length=2049):
 
 
 def chunk_and_finalize(arrays, args, encoder):
-    sequences = list(arrays_to_sequences(arrays))
+    sequences = list(arrays_to_sequences(arrays, sequence_length=128))
 
     full_seqs, trailing_data = sequences[:-1], sequences[-1]
 
