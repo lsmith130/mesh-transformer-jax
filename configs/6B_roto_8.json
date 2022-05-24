@@ -12,17 +12,17 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 32,
 
-  "warmup_steps": 15,
-  "anneal_steps": 1495,
-  "lr": 2e-5,
-  "end_lr": 2e-6,
+  "warmup_steps": 30,
+  "anneal_steps": 2980,
+  "lr": 5e-5,
+  "end_lr": 1e-5,
   "weight_decay": 0.1,
-  "total_steps": 1510,
+  "total_steps": 3010,
 
   "tpu_size": 8,
 
   "bucket": "cql-helper-testing",
-  "model_dir": "mesh_jax_cql_6B_rotary-4",
+  "model_dir": "mesh_jax_cql_6B_rotary-5",
 
   "eval_harness_tasks": [],
   "train_set": "queries.train.index",
@@ -31,8 +31,8 @@
 
   "val_batches": 100,
   "val_every": 500000000,
-  "ckpt_every": 755,
-  "keep_every": 755,
+  "ckpt_every": 1505,
+  "keep_every": 1505,
 
   "name": "GPT3_6B_cql_rotary",
   "wandb_project": "mesh-transformer-jax",
